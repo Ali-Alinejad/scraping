@@ -51,6 +51,10 @@ npm run dev
 ```
 
 The frontend will be available at `http://localhost:3000`.
+### 4.intro
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d413376a-39ad-43b1-809c-743a0ba0da5d" width="500"/>
+</p>
 
 ## 🔐 Notes
 
