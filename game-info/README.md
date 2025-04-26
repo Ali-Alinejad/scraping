@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 💰 Currency Price Dashboard
 
-First, run the development server:
+A simple React + Express app to display real-time prices of currencies, gold, and cryptocurrencies using web scraping from [tgju.org](https://www.tgju.org).
+
+## 🧠 Features
+
+- Scrapes data (no manual price input)
+- Real-time prices of:
+  - Stock market
+  - 18K gold
+  - Gold ounce
+  - Gold coin (mesghal)
+  - USD
+  - Bitcoin
+  - Tether (IRT)
+- Auto-refresh every 60 seconds
+- Clean UI built with Tailwind CSS
+
+## 🧰 Tech Stack
+
+- Frontend: React (with Next.js), Tailwind CSS
+- Backend: Express.js, Axios
+- Scraping: Regex-based HTML parsing
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/currency-dashboard.git
+cd currency-dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Backend Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd backend
+npm install
+node index.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The proxy server will run at `http://localhost:5000`.
 
-## Learn More
+### 3. Frontend Setup
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The frontend will be available at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔐 Notes
 
-## Deploy on Vercel
+- Scraping is done on the server to bypass CORS and site protection.
+- If tgju.org changes their DOM structure, you may need to update the regex selectors in the frontend.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼 Screenshot
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![screenshot](./screenshot.png) <!-- optional if you add one -->
+
+## 📄 License
+
+MIT License
