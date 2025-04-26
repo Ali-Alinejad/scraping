@@ -28,16 +28,15 @@ A simple React + Express app to display real-time prices of currencies, gold, an
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/currency-dashboard.git
-cd currency-dashboard
+git clone https://github.com/Ali-Alinejad/scraping.git
+cd scraping
 ```
 
 ### 2. Backend Setup
 
 ```bash
-cd backend
 npm install
-node index.js
+node proxy-server.js
 ```
 
 The proxy server will run at `http://localhost:5000`.
@@ -45,7 +44,7 @@ The proxy server will run at `http://localhost:5000`.
 ### 3. Frontend Setup
 
 ```bash
-cd frontend
+cd game
 npm install
 npm run dev
 ```
